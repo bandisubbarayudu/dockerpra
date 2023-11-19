@@ -1,0 +1,18 @@
+version: '3'
+services:
+  movies:
+    image: subbaroyal/movies:v1
+    ports:
+      - "8000:80"
+  
+  train:
+    image: subbaroyal/train:v1
+    ports:
+      - "8001:81"
+
+
+  phone:
+    image: subbaroyal/phone:v1
+    ports:
+      - "8001:82"
+      
